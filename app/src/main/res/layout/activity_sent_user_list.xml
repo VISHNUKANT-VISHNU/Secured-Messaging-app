@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#383838"
+    tools:context=".SentUserList">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view3"
+        android:layout_width="362dp"
+        android:layout_height="590dp"
+        android:layout_marginTop="55dp"
+        android:background="#383838"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sent_messages3"
+        android:layout_width="96dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="800dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="280dp"
+        android:backgroundTint="#424040"
+        android:text="INBOX"
+        android:textColor="#efe4b0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageButton
+        android:id="@+id/sendButton3"
+        android:layout_width="88dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="800dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="280dp"
+        android:background="#424040"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:background="#383838"
+        android:fontFamily="serif"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="OUTBOX"
+        android:textColor="#efe4b0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="OUTBOX" />
+</androidx.constraintlayout.widget.ConstraintLayout>
